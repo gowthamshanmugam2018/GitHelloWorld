@@ -11,10 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.e("GTM","onCreate api called")
-        findViewById<TextView>(R.id.tv1).setOnClickListener{
-            Toast.makeText(this,"GTM master commit",Toast.LENGTH_LONG).show()
+        findViewById<TextView>(R.id.sectv1).setOnClickListener{
+            Toast.makeText(this,"GTM second master commit",Toast.LENGTH_LONG).show()
         }
-
     }
 
     override fun onDestroy() {
