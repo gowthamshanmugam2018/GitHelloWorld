@@ -10,4 +10,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Log.e("GTM","Initial Logs")
     }
+
+    override fun onPause() {
+        super.onPause()
+        Log.e("GTM","onPause")
+    }
 }
