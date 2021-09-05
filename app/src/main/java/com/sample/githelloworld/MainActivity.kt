@@ -8,6 +8,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Log.e("GTM","Initial Logs")
+        Log.e("GTM","onCreate api called")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.e("GTM","onDestroy api called")
     }
 }
