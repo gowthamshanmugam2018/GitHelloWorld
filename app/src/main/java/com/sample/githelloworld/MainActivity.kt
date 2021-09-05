@@ -20,4 +20,8 @@ class MainActivity : AppCompatActivity() {
         super.onPause()
         Log.e("GTM","onPause")
     }
+
+    override fun onStop() {
+        super.onStop()
+    }
 }
